@@ -3,18 +3,17 @@
 /**
  * prints 10 times the numbers, from 0 to 14
  */
-
 void more_numbers(void)
 {
-	int i, j;
+	int num, count;
 
-	for (j = 0; j <= 9; j++)
+	for (count = 0; count <= 9; count++)
 	{
-		for (i = 0; i <= 14; i++)
+		for (num = 0; num <= 14; num++)
 		{
-			if (i > 9)
-				_putchar((i / 10) + '0');
-			_putchar((i % 10) + '0');
+			if (num > 9)
+				_putchar((num / 10) + '0');
+			_putchar((num % 10) + '0');
 		}
 		_putchar('\n');
 	}
